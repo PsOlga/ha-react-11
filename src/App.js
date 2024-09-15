@@ -1,26 +1,26 @@
 
 
-
-import {BrowserRouter, Routes, Route, Link, NavLink} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import './App.css';
 import AllArticles from './components/AllArticles'; 
 import Article from './components/Article';
 import TheMain from './components/TheMain';
-import Breadcrump from './components/Breadcrumb';
+import Header from './components/header';
 
 function App() {
   return (
-<BrowserRouter>
+
 <div className="App">
-<Breadcrump />
+
+   <Header />
     <Routes>
       <Route path="/" element={<TheMain />}/>
-      <Route path="/allArticles" element={<AllArticles />}/>
-      <Route path="/article" element={<Article />}/>
+      <Route path="/AllArticles" element={<AllArticles />}/>
+      <Route path="/article/:artickelId" element={<Article />}/>
 
     </Routes>
     </div>
-</BrowserRouter>
+
   );
 }
 

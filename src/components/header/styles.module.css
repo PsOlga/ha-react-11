@@ -1,0 +1,24 @@
+.headerBlog {
+    background-color: #edebeb;
+    border-bottom: 2px solid rgb(57, 134, 176);
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid rgb(57, 134, 176);
+
+}
+
+.linkHome,
+.linkArticles {
+    text-decoration: none;
+    color: rgb(45, 111, 146);
+    margin: 5px;
+
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.linkHome:hover,
+.linkArticles:hover {
+    color: rgb(29, 91, 124);
+}
